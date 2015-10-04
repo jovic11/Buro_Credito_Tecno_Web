@@ -1,0 +1,17 @@
+Jorge Muñoz
+
+*
+!.gitignore
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+
+.idea
+.classpath
+.project
+.settings/
+target/
+Procfile
