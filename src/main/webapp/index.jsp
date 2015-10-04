@@ -1,3 +1,1 @@
-<form action="User/Login">
-    <input type="submit">
-</form>
+ <META HTTP-EQUIV="Refresh" CONTENT="1;URL=User/Login">
