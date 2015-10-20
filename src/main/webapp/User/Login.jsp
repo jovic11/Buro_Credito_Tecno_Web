@@ -17,59 +17,40 @@
 </head>
 <body>
 
-<div class="container-full">
+<div class="col-lg-12 text-center">
 
-  <div class="row">
+    <h1>Buro de Credito</h1>
 
-    <div class="col-lg-12 text-center v-center">
+    <p class="lead">Aplicación Web</p>
 
-      <h1>Buro de Credito</h1>
-      <p class="lead">Aplicación Web</p>
 
-      <br><br><br>
+      <s:form cssClass="form-signin" action="WelcomeStruts">
+            <h5>Proporcione los datos necesarios</h5><br>
+            <s:textfield cssClass="text-input text form-control"  name="username"
+                         placeholder="Username"/>
+            <s:password cssClass="text-input text form-control" name="password"
+                        placeholder="Password"/>
+            <div style="display: none" id="ressetPass">
+                <label>Ingrese su nueva contraseña</label>
+                <s:password cssClass="text-input text form-control" id="idnewPassword"  onkeypress="tamanoPass2(event)" name="newPassword"
+                             placeholder="Nuevo Password"/>
 
-     <div class="modal-dialog">
-          <div class="loginmodal-container">
-            <h1>Proporcione los datos necesarios</h1><br>
-            <s:form action="WelcomeStruts">
-              <s:textfield cssClass="text-input text" type="text" name="username" placeholder="Username"/>
-              <s:password cssClass="text-input text" type="password" name="password" placeholder="Password"/>
-              <s:submit type="submit" name="login" cssClass="login loginmodal-submit btn btn-info" value="Login"/>
-            </s:form>
-
-            <div class="login-help">
-              <a class="button btn btn-info" href="#">Cambiar passwordr</a>
+                <input class="text-input text form-control" id="idrepitPassword" onkeyup="confirmPass(event)" type="password" name="password"
+                       placeholder="Repetir Password"/>
             </div>
-          </div>
-        </div>
 
-
-
-
-       <%--   <s:form cssClass="form-group form-control" action="WelcomeStruts">
-            <s:textfield  name="username" label="Username" />
-            <s:password  name="password" label="Password" />
-            <s:submit cssClass="button btn-default btn" name="Ingresar" />
-            <s:submit cssClass="btn-info btn button" name="Camnbiar password" />
-          </s:form>
---%>
-
-        </div>
-
-    </div>
-
-  </div> <!-- /row -->
-
-  <div class="row">
-
-    <div class="col-lg-12 text-center v-center" style="font-size:39pt;">
-      <a href="#"><i class="icon-github"></i></a>
-    </div>
-
-  </div>
-
-  <br><br><br><br><br>
-
-</div> <!-- /container full -->
+            <div style="display: block" id="btnLogin">
+                <s:submit cssClass="btn button btn-group btn-info btn-block "
+                          value="Login"/>
+            </div>
+            <br>
+            <div style="display: none" id="btnCancelLogin">
+                <button type="button" onclick="btnCancelPass()" class="btn button btn-group btn-info btn-block "/>Cancelar
+            </div>
+            <div style="display: block" id="btnChangeLogin" >
+                <button type="button"  onclick="btnLoginPass()" href="#" class="btn button btn-group btn-info btn-block "/>Cambiar Password
+            </div>
+        </s:form>
+</div> <!-- -->
 </body>
 </html>
