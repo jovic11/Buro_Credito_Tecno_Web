@@ -14,7 +14,11 @@
 * Persistence of Hibernate (hibernate.cfg.xml)
 * How to run tests (apache tomcat server)
 * Deployment instructions:
- 1. Download the repository
- 2. Open with IDE (Netbeans or IntelliJ)
- 3. Build dependencies
- 4. Run with a server
+  * 1. Download the repository
+  * 2. Open with IDE (Netbeans or IntelliJ)
+  * 3. Build dependencies
+  * 4. Run with a server
+
+
+##Note:##
+ * Clear cache of your browser
