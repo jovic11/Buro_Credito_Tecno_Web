@@ -11,6 +11,8 @@
 
 <html>
 <head>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <link rel="stylesheet" href="<s:url value="../resource/css/bootstrap.min.css" />" type="text/css"/>
   <link rel="stylesheet" href="<s:url value="../resource/css/styles.css" />" type="text/css"/>
   <title>Buro de Credito</title>
@@ -52,5 +54,7 @@
             </div>
         </s:form>
 </div> <!-- -->
+
+<script language="JavaScript" type="text/javascript" src="../resource/js/login.js"></script>
 </body>
 </html>

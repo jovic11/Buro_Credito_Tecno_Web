@@ -9,46 +9,38 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <link href="../resource/css/bootstrap.min.css" rel="stylesheet">
   <link href="../resource/css/styles.css" rel="stylesheet">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="<s:url value="../resource/css/navBar.css" />" type="text/css"/>
+
     <title>Buro de Credito</title>
 </head>
 <body>
-<div class="container-full">
+<div class="container-fluid">
+  <!-- NavBar Buro de Credito -->
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <!-- Button de Home de Buro de Credito -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Buro de Credito</a>
+      </div>
 
-  <div class="row">
-
-    <div class="col-lg-12 text-center v-center">
-
-      <h1>Hello Struts</h1>
-      <p class="lead">Maven y Struts 2</p>
-
-      <br><br><br>
-      <div class="input-group" style="width:340px;text-align:center;margin:0 auto;">
-      <h2>
-        Hello
-        <s:property  value="username" />
-        <s:property value="password" />
-      </h2>
-
-    </div>
-
-  </div>
-
-</div> <!-- /row -->
-
-<div class="row">
-
-  <div class="col-lg-12 text-center v-center" style="font-size:39pt;">
-    <a href="#"><i class="icon-github"></i></a>
-  </div>
-
-</div>
-
-<br><br><br><br><br>
-
-</div> <!-- /container full -->
-
+      <!-- Menus de NavBar-->
+      <div class="collapse navbar-collapse" id="navbar-collapse-4">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Alta Credito</a></li>
+          <li><a href="#">Historial Crediticio</a></li>
+          <li><a href="#">Editar Credito</a></li>
+          <li><a href="#">Mi perfil</a></li>
+          <li>
+            <a class="btn btn-default btn-outline btn-circle collapsed">Salir <i class=""></i> </a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav><!-- /.navbar -->
+</div><!-- /.container-fluid -->
 </body>
 </html>

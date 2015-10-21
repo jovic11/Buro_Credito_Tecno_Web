@@ -1,1 +1,5 @@
 /target/
+.idea/artifacts/com_maven_struts2_war_exploded.xml
+.idea/.name
+com.maven.struts2.iml
+*.xml
