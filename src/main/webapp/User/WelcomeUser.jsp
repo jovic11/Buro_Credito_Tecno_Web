@@ -26,7 +26,8 @@
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Buro de Credito</a>
       </div>
-
+      <s:label cssClass="text-input text form-control"  name="username"
+               placeholder="Username"/>  ${sessionScope.username}
       <!-- Menus de NavBar-->
       <div class="collapse navbar-collapse" id="navbar-collapse-4">
         <ul class="nav navbar-nav navbar-right">

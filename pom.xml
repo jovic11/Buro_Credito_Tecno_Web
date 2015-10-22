@@ -14,12 +14,15 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <!-- MYSQL database driver -->
+     <!-- MYSQL database driver -->
     <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.9</version>
-    </dependency>
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+	<version>5.1.37</version>
+</dependency>
+
+   
+   
 
     <!-- Hibernate framework -->
     <dependency>
