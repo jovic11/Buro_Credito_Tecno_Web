@@ -52,7 +52,7 @@
             <div style="display: block" id="btnChangeLogin" >
                 <button type="button"  onclick="btnLoginPass()" href="#" class="btn button btn-group btn-info btn-block "/>Cambiar Password
             </div>
-        </s:form>
+      </s:form>
 </div> <!-- -->
 
 <script language="JavaScript" type="text/javascript" src="../resource/js/login.js"></script>

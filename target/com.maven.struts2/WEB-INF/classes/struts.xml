@@ -6,12 +6,20 @@
 <struts>
 
     <package name="user" namespace="/User" extends="struts-default">
+
         <action name="Login">
             <result>Login.jsp</result>
         </action>
         <action name="WelcomeStruts" class="actions.ActionLogin">
             <result name="SUCCESS">WelcomeUser.jsp</result>
             <result name="ERROR">Login.jsp</result>
+        </action>
+
+    </package>
+
+    <package name="default" extends="json-default" namespace="/Historial">
+        <action name="sendHistorial" class="actionsJSON.HistorialCrediticioJSON">
+            <result type="json"/>
         </action>
     </package>
 
