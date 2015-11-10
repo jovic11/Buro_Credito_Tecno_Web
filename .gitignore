@@ -3,3 +3,8 @@
 .idea/.name
 com.maven.struts2.iml
 *.xml
+
+.classpath
+.project
+.settings/
+target/
