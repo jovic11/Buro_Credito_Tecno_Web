@@ -30,9 +30,8 @@
             <h5>Proporcione los datos necesarios</h5><br>
             <s:textfield cssClass="text-input text form-control"  name="username"
                          placeholder="Username"/>
-            <s:password cssClass="text-input text form-control" name="password"
-                        placeholder="Password"/>
-            <div style="display: none" id="ressetPass">
+            <s:password cssClass="text-input text form-control" name="password"/>
+          <div style="display: none" id="ressetPass">
                 <label>Ingrese su nueva contraseña</label>
                 <s:password cssClass="text-input text form-control" id="idnewPassword"  onkeypress="tamanoPass2(event)" name="newPassword"
                              placeholder="Nuevo Password"/>
@@ -52,6 +51,8 @@
             <div style="display: block" id="btnChangeLogin" >
                 <button type="button"  onclick="btnLoginPass()" href="#" class="btn button btn-group btn-info btn-block "/>Cambiar Password
             </div>
+           <s:label name="error" />
+
       </s:form>
 </div> <!-- -->
 

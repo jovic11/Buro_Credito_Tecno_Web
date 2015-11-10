@@ -14,11 +14,11 @@ public class ConexionMYSQL {
 
     private String servidor="localhost:3306";
 
-    private String database="TW";
+    private String database="buro_credito";
 
     private String usuario="root";
 
-    private String password="lovehina";
+    private String password="123456";
 
     private String url="";
 

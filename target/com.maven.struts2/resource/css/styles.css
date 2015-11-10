@@ -2,15 +2,7 @@ html,body {
   height:100%;
 }
 
-h1 {
-  font-family: Arial,sans-serif
-  font-size:80px;
-  color: #0f0e10;
-}
 
-.lead {
-	color: rgba(39, 39, 45, 0.87);
-}
 
 
 /* Custom container */

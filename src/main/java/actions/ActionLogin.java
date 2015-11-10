@@ -13,8 +13,9 @@ import java.sql.Statement;
 public class ActionLogin {
 
 
-    private String username;
+    public  String username;
     private  String password;
+    private  String error;
 
     public String getUsername() {
         return username;
@@ -34,28 +35,39 @@ public class ActionLogin {
 
     // all struts logic here
     public String execute() throws SQLException {
-String r="";
+
         Statement st=new ConexionMYSQL().Conexion().createStatement();
        
-        String sql="select user,pass from login where user='"+getUsername()+"'";
+        String sql="select user,password from users where user='"+getUsername()+"'";
        
         ResultSet rs = st.executeQuery(sql);
         rs.next();
- 
-      
-//        getPassword().equals("1234") ||
-        if ( getUsername().equals(rs.getString(1))){
-           
-            setUsername(rs.getString(2));
-            return "SUCCESS";
-        }
+       try {
+           if (getUsername().equals(rs.getString(1))) {
+               System.err.println(rs.getString(2));
 
-        else{
-            return "ERROR";
-        }
+               setUsername(rs.getString(1));
+               return "SUCCESS";
+           } else {
+               setError("Error contraseña invalida el usuario no existe");
+               return "ERROR";
+           }
+       }catch (Exception e){
+
+           setError("Error contraseña invalida el usuario no existe");
+           return "ERROR";
+
+       }
 
 
 
     }
 
+    public String getError() {
+        return error;
+    }
+
+    public void setError(String error) {
+        this.error = error;
+    }
 }
